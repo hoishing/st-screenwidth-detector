@@ -1,19 +1,19 @@
-# streamlit screenwidth detector
+# Streamlit Screen Width Detector
 
-> Automatically rerun Streamlit app when screen width changes
+> Get current screen width when screen size changes
 
 ## Usage
 
-### installation
+Installation:
 
-`uv add st-screenwidth-detector`
+```sh
+uv add st-screenwidth-detector
+```
 
-### Implementation
-
-Add the component **anywhere** in your Streamlit app:
+Get current screen width dynamically(trigger app rerun) when screen size changes:
 
 ```python
 from st_screenwidth_detector import screenwidth_detector
 
-screenwidth_detector()
+st.write("screen width:", screenwidth_detector())
 ```
