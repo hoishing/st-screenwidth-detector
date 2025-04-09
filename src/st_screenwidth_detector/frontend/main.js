@@ -1,9 +1,8 @@
 import { Streamlit } from "streamlit-component-lib";
 
-// Add CSS to hide the component
-const style = parent.document.createElement("style");
-style.textContent = ".st-key-screenwidth-detector { display: none; }";
-parent.document.head.appendChild(style);
+// hide the component
+parent.document.querySelector(".st-key-screenwidth-detector").style.display =
+  "none";
 
 // Debounce function to delay execution
 function debounce(func, wait) {
