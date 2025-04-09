@@ -1,6 +1,9 @@
 .DS_Store
 try*
 
+### Node ###
+node_modules/
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -59,3 +62,6 @@ venv.bak/
 
 # mkdocs output
 site/
+
+# frontend
+!**/frontend/dist/
