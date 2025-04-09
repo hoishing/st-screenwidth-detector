@@ -2,7 +2,7 @@ import streamlit.components.v1 as components
 from pathlib import Path
 from streamlit.components.v1.custom_component import CustomComponent
 
-name = "screenwidth_detector"
+name = "screenwidth-detector"
 build_path = Path(__file__).parent / "frontend/dist"
 dev_server_url = "http://localhost:5173"
 __all__ = [name]

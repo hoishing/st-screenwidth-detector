@@ -63,5 +63,7 @@ venv.bak/
 # mkdocs output
 site/
 
-# frontend
+# project files
 !**/frontend/dist/
+pnpm-lock.yaml
+uv.lock

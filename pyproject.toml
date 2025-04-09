@@ -1,6 +1,6 @@
 [project]
 name = "st-screenwidth-detector"
-version = "0.1.1"
+version = "0.1.2"
 description = "Get current screen width when screen size changes"
 readme = "README.md"
 authors = [{ name = "Kelvin Ng", email = "hoishing@gmail.com" }]

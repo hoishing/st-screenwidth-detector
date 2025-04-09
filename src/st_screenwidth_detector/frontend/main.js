@@ -1,5 +1,10 @@
 import { Streamlit } from "streamlit-component-lib";
 
+// Add CSS to hide the component
+const style = parent.document.createElement("style");
+style.textContent = ".st-key-screenwidth-detector { display: none; }";
+parent.document.head.appendChild(style);
+
 // Debounce function to delay execution
 function debounce(func, wait) {
   let timeout;
@@ -26,4 +31,3 @@ function onRender() {
 
 Streamlit.events.addEventListener(Streamlit.RENDER_EVENT, onRender);
 Streamlit.setComponentReady();
-Streamlit.setFrameHeight(0);
